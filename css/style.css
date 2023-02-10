@@ -4,7 +4,7 @@
   font-family: 'Inter';
   color: #333;
 }
-
+/*
 header img {
   width: 95vw;
   margin-left: 2.5vw;
@@ -33,7 +33,7 @@ main {
   outline: none;
 } 
 
-.subflex-conten {
+.subflex-content {
   width: 90vw;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ main {
   margin-right: 5vw;
 }
 
-.subflex-conten p {
+.subflex-content p {
   margin-bottom: 1vh;
   font-size: 0.5em;
 }
@@ -67,7 +67,7 @@ main {
   font-weight: 700;
 }
 
-.content-derecha {
+.content-textarea {
   width: 90vw;
   border:o;
   border-radius: 15vw;
@@ -88,4 +88,96 @@ main {
   outline: none;
   position: relative;
   resize: none;
+}*/
+
+@media screen and (min-width: 600px){
+  html {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50vw;
+    height: 80vh;
+    padding-bottom: 0vh;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    width: 25vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .content-izquierda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izquierda-textarea {
+    width: 20vw;
+    height: 50vh;
+    margin-left: 5vw;
+    border: 0;
+    resize: none;
+  }
+
+  ::placeholder { color:#0A3871 }
+
+  .izquierda-textarea:focus {
+    outline: none;
+  } 
+
+  .subflex-content p {
+    margin-bottom: 0vh;
+    font-size: .6em;
+    padding: 1vw;
+  }
+
+  .subflex-content {
+    width: auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+  } 
+
+  .btn-encripta-izquierda {
+    width: 10vw;
+    height: 4vh;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 1.2vw;
+    margin-bottom: 1vh;
+    border-radius: 10vw;
+    background-color: #3366FF;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .btn-desencripta-izquierda {
+    width: 10vw;
+    height: 4vh;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 1.2vw;
+    margin-bottom: 1vh;
+    border-radius: 10vw;
+    background-color: #ddd;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+
 }
