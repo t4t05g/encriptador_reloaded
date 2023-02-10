@@ -4,7 +4,7 @@
   font-family: 'Inter';
   color: #333;
 }
-/*
+
 header img {
   width: 95vw;
   margin-left: 2.5vw;
@@ -24,7 +24,7 @@ main {
   margin-left: 5vw;
   border: 0;
   resize: none;
-  
+  text-transform: lowercase;
 }
 
 ::placeholder { color:#0A3871 }
@@ -43,52 +43,90 @@ main {
 
 .subflex-content p {
   margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.5em;
 }
 
 .btn-encripta-izquierda {
-  font-size: .75em;
-  vertical-align: middle;
-  padding: 2vh;
-  margin-bottom: 1vh;
-  border-radius: 15vw;
-  background-color: #3366FF;
-  color: #fff;
-  font-weight: 700;
+    width: 40vw;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 2vh;
+    margin-bottom: 1vh;
+    margin-right: 4vw;
+    border-radius: 15vw;
+    background-color: #3366FF;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1 solid #333;
 }
+
+.btn-encripta-izquierda:hover{ 
+    background: #6699FF; 
+    color: white; 
+    font-weight: bold; 
+    border: 2px solid #000066; 
+ } 
+  
+ .btn-encripta-izquierda:active { 
+    background-color: #6699FF; 
+    border: 1px solid #0A3871; 
+ }
 
 .btn-desencripta-izquierda {
-  font-size: .75em;
-  vertical-align: middle;
-  padding: 2vh;
-  margin-bottom: 1vh;
-  border-radius: 15vw;
-  background-color: #ddd;
-  font-weight: 700;
+    width: 40vw;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 2vh;
+    margin-bottom: 1vh;
+    border-radius: 15vw;
+    background-color: #ddd;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1 solid #333;
 }
 
+.btn-desencripta-izquierda:hover{ 
+    background: #fff; 
+    color: #333; 
+    font-weight: bold; 
+    border: 2px solid #999; 
+ } 
+  
+ .btn-desencripta-izquierda:active { 
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+ }
+
 .content-textarea {
-  width: 90vw;
-  border:o;
-  border-radius: 15vw;
-  background-color: #fff;
-  padding: 5vh 1vw 10vh 1vw;
-  margin: 2.5vw;
-  position: relative;
-  box-shadow: 3px 10px 50px 1px #DDDDDD;
-  justify-items: center;
-  align-items: center;
+    width: 85vw;
+    border:0;
+    border-radius: 15vw;
+    background-color: #fff;
+    padding: 5vh 1vw 10vh 1vw;
+    margin: 6vw;
+    position: relative;
+    box-shadow: 3px 10px 50px 1px #DDDDDD;
+    justify-items: center;
+    align-items: center;
 }
 
 .derecha-textarea {
-  border: 0;
-  width: 85%;
-  margin-left:7%;
-  background-color: #fff;
-  outline: none;
-  position: relative;
-  resize: none;
-}*/
+    border: 0;
+    width: 85%;
+    margin-left:8%; 
+    background: white;
+    background-image: url("/images/txt-textarea-derecha.jpg");
+    background-size: 80%;
+    background-position-y: 30%; 
+    background-position-x: center; 
+    background-repeat: no-repeat;
+    outline: none;
+    position: relative;
+    resize: none;
+}
 
 @media screen and (min-width: 600px){
   html {
