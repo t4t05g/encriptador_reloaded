@@ -1,10 +1,122 @@
 * {
   font-size: 24px;
-  background: #F3F5FC;
   font-family: 'Inter';
   color: #333;
 }
 
+  html {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60vw;
+    height: 80vh;
+    padding-bottom: 0vh;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    width: 25vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .content-izquierda {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izquierda-textarea {
+    width: 20vw;
+    height: 50vh;
+    margin-left: 5vw;
+    border: 0;
+    resize: none;
+  }
+
+  ::placeholder { color:#0A3871 }
+
+  .izquierda-textarea:focus {
+    outline: none;
+  } 
+
+  .subflex-content p {
+    margin-bottom: 0vh;
+    font-size: .6em;
+    padding: 1vw;
+  }
+
+  .subflex-content {
+    width: auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    position: relative;
+  } 
+
+  .btn-encripta-izquierda {
+    width: 10vw;
+    height: 4vh;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 1.2vw;
+    margin-bottom: 1vh;
+    border-radius: 10vw;
+    background-color: #3366FF;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .btn-desencripta-izquierda {
+    width: 10vw;
+    height: 4vh;
+    font-size: .75em;
+    vertical-align: middle;
+    padding: 1.2vw;
+    margin-bottom: 1vh;
+    border-radius: 10vw;
+    background-color: #ddd;
+    font-weight: 700;
+  }
+
+  .content-textarea {
+    width: 15vw;
+    height: 50vh;
+    border:0;
+    border-radius: 5vw;
+    background-color: #fff;
+    padding: 5vh 1vw 10vh 1vw;
+    margin: 6vw;
+    box-shadow: 3px 10px 50px 1px #DDDDDD;
+    justify-items: center;
+}
+
+  .derecha-textarea {
+    border: 0;
+    width: 15vw;
+    margin-left:0; 
+    background: white;
+    background-color: white;
+    background-size: 80%;
+    background-position-y: 30%; 
+    background-position-x: center; 
+    background-repeat: no-repeat;
+    outline: none;
+    position: relative;
+    resize: none;
+  }
+
+/* ********************************************************************************
+******************************************************************************** */
+
+@media screen and (max-width: 500px){
 header img {
   width: 95vw;
   margin-left: 2.5vw;
@@ -127,95 +239,5 @@ main {
     position: relative;
     resize: none;
 }
-
-@media screen and (min-width: 600px){
-  html {
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50vw;
-    height: 80vh;
-    padding-bottom: 0vh;
-    flex-wrap: wrap;
-  }
-
-  header img {
-    width: 25vw;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-  }
-
-  .content-izquierda {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .izquierda-textarea {
-    width: 20vw;
-    height: 50vh;
-    margin-left: 5vw;
-    border: 0;
-    resize: none;
-  }
-
-  ::placeholder { color:#0A3871 }
-
-  .izquierda-textarea:focus {
-    outline: none;
-  } 
-
-  .subflex-content p {
-    margin-bottom: 0vh;
-    font-size: .6em;
-    padding: 1vw;
-  }
-
-  .subflex-content {
-    width: auto;
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    position: relative;
-  } 
-
-  .btn-encripta-izquierda {
-    width: 10vw;
-    height: 4vh;
-    font-size: .75em;
-    vertical-align: middle;
-    padding: 1.2vw;
-    margin-bottom: 1vh;
-    border-radius: 10vw;
-    background-color: #3366FF;
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  .btn-desencripta-izquierda {
-    width: 10vw;
-    height: 4vh;
-    font-size: .75em;
-    vertical-align: middle;
-    padding: 1.2vw;
-    margin-bottom: 1vh;
-    border-radius: 10vw;
-    background-color: #ddd;
-    font-weight: 700;
-  }
-
-
-
-
-
-
-
 
 }
